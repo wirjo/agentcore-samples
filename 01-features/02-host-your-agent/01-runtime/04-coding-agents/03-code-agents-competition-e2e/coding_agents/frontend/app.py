@@ -86,6 +86,12 @@ AGENTS = {
         "run_cmd": "/app/run.sh {model_flag}'{prompt}'; exit",
         "default_model": "amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0",
     },
+    "openclaw": {
+        "name": "OpenClaw",
+        "config_dir": os.path.join(AGENTS_DIR, "openclaw"),
+        "run_cmd": "/app/run.sh {model_flag}'{prompt}'; exit",
+        "default_model": "us.anthropic.claude-opus-4-6-v1",
+    },
 }
 
 
